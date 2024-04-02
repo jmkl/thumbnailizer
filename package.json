@@ -1,0 +1,34 @@
+{
+  "name": "thumbnailizer",
+  "version": "0.0.2",
+  
+  "description": "",
+  "scripts": {
+    "watch": "webpack -w --mode development",
+    "build": "webpack --mode production",
+    "core:watch": "esbuild src/CORE.cjs --format=cjs --outfile=D:\\__CODE\\PHOTOSHOP\\comfyui-photoshop\\customscripts\\CORE.js --watch",
+    "release": "webpack --mode production && uxp plugin package --manifest .\\dist\\manifest.json --outputPath .\\build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "copy-webpack-plugin": "^12.0.1",
+    "css-loader": "^6.9.0",
+    "postcss": "^8.4.33",
+    "postcss-loader": "^8.0.0",
+    "style-loader": "^3.3.4",
+    "sval": "^0.4.8",
+    "svelte": "^4.2.8",
+    "svelte-loader": "^3.1.9",
+    "svelte-preprocess": "^5.1.3",
+    "tailwindcss": "^3.4.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.3.10"
+  }
+}
